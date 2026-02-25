@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,16 +30,20 @@ const Header = () => {
                 <div className="max-w-[1600px] mx-auto px-5 md:px-12 py-3 flex justify-between items-center">
                     {/* Logo Area */}
                     <a href="/" className="flex items-center gap-4 group">
-                        <div className="h-10 w-auto flex items-center">
-                            <img
+                        <div className="h-10 w-auto flex items-center relative">
+                            <Image
                                 src="/logo-dark.png"
                                 alt="TF VISUAL Logo"
-                                className="h-10 w-auto block dark:hidden"
+                                height={40}
+                                width={120}
+                                className="h-10 w-auto block dark:hidden object-contain"
                             />
-                            <img
+                            <Image
                                 src="/logo-light.png"
                                 alt="TF VISUAL Logo"
-                                className="h-10 w-auto hidden dark:block"
+                                height={40}
+                                width={120}
+                                className="h-10 w-auto hidden dark:block object-contain"
                             />
                         </div>
                         <span className="uppercase tracking-[0.3em] text-[10px] sm:text-xs font-normal text-slate-800 dark:text-slate-100 group-hover:text-primary transition-colors">Twenty-First Visuals</span>
@@ -142,7 +147,7 @@ const Header = () => {
                                         {theme === 'light' ? 'Dark' : 'Light'}
                                     </button>
                                 </div>
-                                <a href="mailto:studio@eliasthorne.com" className="block text-[9px] uppercase tracking-[0.3em] font-bold text-primary">
+                                <a href="mailto:twentyfirstvisual@gmail.com" className="block text-[9px] uppercase tracking-[0.3em] font-bold text-primary">
                                     Inquire for Commissions →
                                 </a>
                             </div>

@@ -1,6 +1,11 @@
-import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "About Fritzgerald Wilson",
+    description: "Learn more about the visual artist behind Twenty-First Visuals. Fritzgerald Wilson is a Monrovia-based photographer specializing in phone photography and minimalist visuals.",
+};
 
 export default function About() {
     return (

@@ -1,6 +1,11 @@
-import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Contact & Inquiries",
+    description: "Get in touch with Twenty-First Visuals for commissions, collaborations, or print inquiries. Based in Monrovia, Liberia.",
+};
 
 export default function Contact() {
     return (
