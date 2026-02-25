@@ -16,8 +16,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Elias Thorne | Photography Portfolio",
-  description: "Capturing the stillness in motion.",
+  title: "Twenty-First Visuals | Visual Storyteller & Photographer",
+  description: "A premium photography portfolio by Twenty-First Visuals, focusing on portrait studies, minimalist landscapes, and cinematic visual stories in Monrovia, Liberia.",
 };
 
 export default function RootLayout({
