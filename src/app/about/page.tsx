@@ -28,7 +28,7 @@ export default function About() {
                             Fritzgerald Wilson
                         </h1>
                         <p className="text-lg md:text-xl font-light leading-relaxed text-slate-500 dark:text-slate-400">
-                            Born and raised in Monrovia, Liberia. Taking simple photographs and playing around with the edit has just been my thing. Fun fact is that, all these available on this website are taken with my phone.
+                            Born and raised in Monrovia, Liberia. Taking simple photographs and playing around with the edit has just been my thing. Fun fact is that, all these available photos on this website are taken with my phone.
                         </p>
                         <br />
                         <p className="text-lg md:text-xl font-light leading-relaxed text-slate-500 dark:text-slate-400">

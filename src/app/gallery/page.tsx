@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ShareButton from '@/components/ShareButton';
 
 const fallbackImages = [
     {
@@ -120,8 +121,8 @@ export default function Gallery() {
                                     key={i}
                                     onClick={() => handlePageChange(i + 1)}
                                     className={`text-sm font-bold flex size-10 items-center justify-center rounded-full transition-all ${currentPage === i + 1
-                                            ? 'bg-primary text-white'
-                                            : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/10'
+                                        ? 'bg-primary text-white'
+                                        : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-white/10'
                                         }`}
                                 >
                                     {i + 1}
@@ -154,12 +155,20 @@ export default function Gallery() {
                                 </div>
                                 <h1 className="text-sm font-medium tracking-widest uppercase text-slate-500 dark:text-slate-400">{images[selectedIdx].title}</h1>
                             </div>
-                            <button
-                                onClick={closeModal}
-                                className="group flex items-center justify-center w-10 h-10 rounded-full transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50 pointer-events-auto"
-                            >
-                                <span className="material-symbols-outlined text-slate-900 dark:text-slate-100 transition-transform group-hover:scale-110">close</span>
-                            </button>
+                            <div className="flex items-center gap-2 pointer-events-auto">
+                                <ShareButton
+                                    url={images[selectedIdx].url}
+                                    title={images[selectedIdx].title}
+                                    className="group flex items-center justify-center w-10 h-10 rounded-full transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50"
+                                    iconClassName="material-symbols-outlined text-slate-900 dark:text-slate-100 transition-transform group-hover:scale-110"
+                                />
+                                <button
+                                    onClick={closeModal}
+                                    className="group flex items-center justify-center w-10 h-10 rounded-full transition-colors hover:bg-slate-200/50 dark:hover:bg-slate-800/50"
+                                >
+                                    <span className="material-symbols-outlined text-slate-900 dark:text-slate-100 transition-transform group-hover:scale-110">close</span>
+                                </button>
+                            </div>
                         </header>
 
                         {/* Main Display Area */}

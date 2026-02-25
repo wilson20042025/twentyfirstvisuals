@@ -4,6 +4,7 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ShareButton from '@/components/ShareButton';
 
 export default function ProjectDetail() {
     const router = useRouter();
@@ -22,9 +23,9 @@ export default function ProjectDetail() {
                         <img src="/logo-light.png" alt="TF VISUAL" className="h-6 w-auto hidden dark:block" />
                     </div>
                 </div>
-                <button className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary/10 text-black dark:text-white">
-                    <span className="material-symbols-outlined">share</span>
-                </button>
+                <ShareButton
+                    className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary/10 text-black dark:text-white"
+                />
             </nav>
 
             <div className="hidden md:block">

@@ -16,8 +16,22 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Twenty-First Visuals | Visual Storyteller & Photographer",
+  title: "Twenty-First Visuals | Visual Artist & Design Thinker",
   description: "A premium photography portfolio by Twenty-First Visuals, focusing on portrait studies, minimalist landscapes, and cinematic visual stories in Monrovia, Liberia.",
+  openGraph: {
+    images: [
+      {
+        url: '/thumbnail.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Twenty-First Visuals Portfolio Thumbnail',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/thumbnail.jpg'],
+  },
 };
 
 export default function RootLayout({

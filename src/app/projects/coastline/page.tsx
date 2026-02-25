@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ShareButton from '@/components/ShareButton';
 
 const MOBILE_HERO_IMAGES = [
     "https://res.cloudinary.com/dgawaxa5e/image/upload/v1771997752/1000319183_11zon_1_n4bdgg.jpg",
@@ -60,9 +61,9 @@ export default function ProjectDetail() {
                         <img src="/logo-light.png" alt="TF VISUAL" className="h-6 w-auto hidden dark:block" />
                     </div>
                 </div>
-                <button className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary/10">
-                    <span className="material-symbols-outlined">share</span>
-                </button>
+                <ShareButton
+                    className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary/10"
+                />
             </nav>
 
             {/* Desktop Header shows as normal */}
