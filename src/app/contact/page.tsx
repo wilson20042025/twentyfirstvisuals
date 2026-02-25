@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactClient from './ContactClient';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -23,56 +24,7 @@ export default function Contact() {
                     </div>
 
                     {/* Contact Form */}
-                    <form
-                        action="https://formspree.io/f/your-id" // Replace with your service endpoint
-                        method="POST"
-                        className="space-y-8 text-left"
-                    >
-                        {/* Honeypot for spam protection */}
-                        <input type="text" name="_gotcha" className="hidden" />
-
-                        <div className="relative">
-                            <label className="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-1" htmlFor="name">Full Name</label>
-                            <input
-                                className="w-full bg-transparent border-0 border-b border-slate-200 dark:border-white/10 px-0 py-3 focus:ring-0 focus:border-primary placeholder-slate-300 dark:placeholder-slate-800 transition-all text-sm outline-none"
-                                id="name"
-                                name="name"
-                                placeholder="Your Name"
-                                type="text"
-                                required
-                            />
-                        </div>
-                        <div className="relative">
-                            <label className="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-1" htmlFor="email">Email Address</label>
-                            <input
-                                className="w-full bg-transparent border-0 border-b border-slate-200 dark:border-white/10 px-0 py-3 focus:ring-0 focus:border-primary placeholder-slate-300 dark:placeholder-slate-800 transition-all text-sm outline-none"
-                                id="email"
-                                name="email"
-                                placeholder="hello@example.com"
-                                type="email"
-                                required
-                            />
-                        </div>
-                        <div className="relative">
-                            <label className="block text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-1" htmlFor="message">Message</label>
-                            <textarea
-                                className="w-full bg-transparent border-0 border-b border-slate-200 dark:border-white/10 px-0 py-3 focus:ring-0 focus:border-primary placeholder-slate-300 dark:placeholder-slate-800 transition-all text-sm resize-none outline-none"
-                                id="message"
-                                name="message"
-                                placeholder="Share your vision..."
-                                rows={4}
-                                required
-                            ></textarea>
-                        </div>
-                        <div className="pt-6 flex justify-center">
-                            <button
-                                className="group relative px-12 py-4 bg-primary text-white text-xs uppercase tracking-[0.3em] font-medium transition-all hover:bg-primary/90 rounded-full shadow-lg shadow-primary/20"
-                                type="submit"
-                            >
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
+                    <ContactClient />
 
 
                 </div>
