@@ -56,7 +56,7 @@ const Header = () => {
                                 <a
                                     key={item}
                                     className="text-[10px] uppercase tracking-[0.25em] font-medium text-slate-500 hover:text-primary transition-all relative group"
-                                    href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                                    href={item === 'Home' ? '/' : (item === 'My Gallery' ? '/gallery' : `/${item.toLowerCase()}`)}
                                 >
                                     {item}
                                     <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary transition-all group-hover:w-full"></span>
@@ -118,7 +118,7 @@ const Header = () => {
                                     {['Home', 'My Gallery', 'About', 'Contact'].map((item, idx) => (
                                         <li key={item} className="overflow-hidden">
                                             <a
-                                                href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                                                href={item === 'Home' ? '/' : (item === 'My Gallery' ? '/gallery' : `/${item.toLowerCase()}`)}
                                                 onClick={() => setIsMenuOpen(false)}
                                                 className={`group flex items-baseline gap-5 transition-all duration-700 transform ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
                                                 style={{ transitionDelay: `${idx * 100}ms` }}
