@@ -123,13 +123,13 @@ export default function GalleryClient({ initialImages }: GalleryClientProps) {
                     {/* Main Content Area (Left/Center) */}
                     <div className="flex-grow flex flex-col relative h-full">
                         {/* Top Navigation / Header (Absolute) */}
-                        <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-6 py-4 md:px-12 md:py-8 pointer-events-none">
-                            <div className="flex items-center gap-3 pointer-events-auto">
+                        <header className="absolute top-0 left-0 right-0 z-20 flex items-center justify-end px-6 py-4 md:px-12 md:py-8 pointer-events-none">
+                            {/* <div className="flex items-center gap-3 pointer-events-auto">
                                 <div className="text-primary">
                                     <span className="material-symbols-outlined text-2xl">filter_vintage</span>
                                 </div>
                                 <h1 className="text-sm font-medium tracking-widest uppercase text-slate-500 dark:text-slate-400">{images[selectedIdx].title}</h1>
-                            </div>
+                            </div> */}
                             <div className="flex items-center gap-2 pointer-events-auto">
                                 <ShareButton
                                     url={images[selectedIdx].url}
@@ -174,13 +174,13 @@ export default function GalleryClient({ initialImages }: GalleryClientProps) {
                                     />
                                 </div>
                                 {/* Caption Showing Only Location/Date on Hover */}
-                                <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-center w-full pointer-events-none opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                                {/* <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-center w-full pointer-events-none opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
                                     <div className="bg-black/40 backdrop-blur-md px-6 py-2.5 rounded-full inline-block border border-white/10 shadow-2xl">
                                         <p className="text-[11px] tracking-[0.3em] font-medium text-white/95 uppercase">
                                             {images[selectedIdx].meta}
                                         </p>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </main>
                     </div>
