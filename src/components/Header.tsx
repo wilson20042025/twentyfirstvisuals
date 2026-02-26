@@ -52,7 +52,7 @@ const Header = () => {
                     <div className="flex items-center gap-6 md:gap-10">
                         {/* Desktop Navigation */}
                         <nav className="hidden md:flex items-center gap-10 lg:gap-14">
-                            {['Home', 'Gallery', 'About', 'Contact'].map((item) => (
+                            {['Home', 'My Gallery', 'About', 'Contact'].map((item) => (
                                 <a
                                     key={item}
                                     className="text-[10px] uppercase tracking-[0.25em] font-medium text-slate-500 hover:text-primary transition-all relative group"
@@ -115,7 +115,7 @@ const Header = () => {
                             {/* Drawer Links */}
                             <nav className="flex-grow flex flex-col pt-12 px-8">
                                 <ul className="space-y-8">
-                                    {['Home', 'Gallery', 'About', 'Contact'].map((item, idx) => (
+                                    {['Home', 'My Gallery', 'About', 'Contact'].map((item, idx) => (
                                         <li key={item} className="overflow-hidden">
                                             <a
                                                 href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
