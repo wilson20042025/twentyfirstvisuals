@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 import Script from "next/script";
+import ImageProtection from "@/components/ImageProtection";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -58,6 +59,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} ${playfair.variable} antialiased font-sans`}>
+        <ImageProtection />
         <Script
           id="structured-data"
           type="application/ld+json"
