@@ -23,7 +23,7 @@ export async function getGalleryImages() {
     try {
         const { resources } = await cloudinary.search
             .expression('resource_type:image')
-            .sort_by('public_id', 'desc')
+            .sort_by('created_at', 'desc')
             .max_results(100)
             .with_field('context')
             .with_field('metadata')

@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     description: "Explore the full collection of photography by Twenty-First Visuals, featuring portraits, minimalist landscapes, and visual stories.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default async function GalleryPage() {
     const images = await getGalleryImages();
 
