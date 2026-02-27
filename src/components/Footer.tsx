@@ -9,10 +9,10 @@ const Footer = () => {
                     className="text-slate-400 hover:text-primary transition-colors flex items-center justify-center"
                     iconClassName="material-symbols-outlined text-xl"
                 />
-                <a className="text-slate-400 hover:text-primary transition-colors" href="#">
+                <a className="text-slate-400 hover:text-primary transition-colors" href="https://www.instagram.com/twenty_first_visuals" target="_blank" rel="noopener noreferrer">
                     <span className="material-symbols-outlined text-xl">camera_alt</span>
                 </a>
-                <a className="text-slate-400 hover:text-primary transition-colors" href="#">
+                <a className="text-slate-400 hover:text-primary transition-colors" href="mailto:twentyfirstvisual@gmail.com">
                     <span className="material-symbols-outlined text-xl">mail</span>
                 </a>
             </div>
