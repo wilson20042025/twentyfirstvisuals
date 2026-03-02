@@ -135,7 +135,7 @@ export default function CoastlineProject() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                         <div className="lg:col-span-8">
                             <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xl font-light">
-                                I captured this image during the morning hours in my backyard garden. What make this photograph a Masterpiece, is because of the detail I was able to notice in Nature. On the entire tree, was only this ant that was alone. Maybe it was lost or insearch of food or probably abandon by it's colony. At its quietest moment was when I captured this.
+                                I captured this image during the morning hours in our backyard garden. What makes this photograph a masterpiece, is because of the detail I was able to notice in within nature. On the entire tree, was only this ant. Maybe it was lost or insearch of food or probably abandon by it's colony. At its quietest moment was when I captured this.
                             </p>
                         </div>
 

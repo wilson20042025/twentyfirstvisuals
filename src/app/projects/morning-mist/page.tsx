@@ -5,8 +5,11 @@ import MorningMistClient from './MorningMistClient';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Wallpaper Shotz",
-    description: "A curated collection of portraits designed for visual impact and vertical depth, exploring personality and minimalist framing.",
+    title: "Wallpaper Shotz | Minimalist Portrait Collection",
+    description: "A curated collection of portraits designed for visual impact and vertical depth, exploring personality and minimalist framing by Twenty-First Visuals.",
+    alternates: {
+        canonical: 'https://twentyfirstvisuals.com/projects/morning-mist'
+    }
 };
 
 export default function ProjectDetail() {

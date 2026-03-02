@@ -5,8 +5,11 @@ import FormLightClient from './FormLightClient';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Twin & Win",
-    description: "A collaborative visual storytelling project with 100 Company, celebrating African culture and unity through bold portraits.",
+    title: "Twin & Win | Portrait Study Project",
+    description: "A collaborative visual storytelling project celebrating African culture and unity through bold portraits captured by Twenty-First Visuals.",
+    alternates: {
+        canonical: 'https://twentyfirstvisuals.com/projects/form-light'
+    }
 };
 
 export default function ProjectDetail() {

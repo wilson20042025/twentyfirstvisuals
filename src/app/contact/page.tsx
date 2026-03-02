@@ -4,8 +4,11 @@ import ContactClient from './ContactClient';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Contact & Inquiries",
+    title: "Contact & Inquiries | Twenty-First Visuals",
     description: "Get in touch with Twenty-First Visuals for commissions, collaborations, or print inquiries. Based in Monrovia, Liberia.",
+    alternates: {
+        canonical: 'https://twentyfirstvisuals.com/contact'
+    }
 };
 
 export default function Contact() {

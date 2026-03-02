@@ -1,10 +1,14 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
-    title: "About Fritzgerald Wilson",
+    title: "About Fritzgerald Wilson | Visual Artist",
     description: "Learn more about the visual artist behind Twenty-First Visuals. Fritzgerald Wilson is a Monrovia-based photographer specializing in phone photography and minimalist visuals.",
+    alternates: {
+        canonical: 'https://twentyfirstvisuals.com/about'
+    }
 };
 
 export default function About() {
@@ -16,11 +20,14 @@ export default function About() {
                 {/* Portrait Container */}
                 <div className="mb-12 md:mb-24">
                     <div className="relative inline-block">
-                        <div className="w-48 h-64 md:w-64 md:h-80 grayscale overflow-hidden rounded-xl bg-background-light dark:bg-white/5 ring-1 ring-black/5 dark:ring-white/10 shadow-2xl">
-                            <img
-                                className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700"
-                                alt="Minimalist black and white portrait of Elias Thorne"
+                        <div className="w-48 h-64 md:w-64 md:h-80 grayscale overflow-hidden rounded-xl bg-background-light dark:bg-white/5 ring-1 ring-black/5 dark:ring-white/10 shadow-2xl relative">
+                            <Image
+                                className="object-cover opacity-90 hover:opacity-100 transition-opacity duration-700"
+                                alt="Minimalist black and white portrait of Fritzgerald Wilson"
                                 src="https://res.cloudinary.com/dgawaxa5e/image/upload/v1771994956/IMG_20250203_114856889_f9ke1x.jpg"
+                                fill
+                                priority
+                                sizes="(max-width: 768px) 192px, 256px"
                             />
                         </div>
                     </div>
